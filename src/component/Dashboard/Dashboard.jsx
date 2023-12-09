@@ -22,7 +22,7 @@ const Dashboard = () => {
       }
       const data = await response.json();
       setQuarterData(data);
-      setError(null); // Clear any previous errors on successful fetch
+      setError(null); 
     } catch (error) {
       console.error('Error fetching data:', error);
       setError('Failed to fetch data. Please try again.');

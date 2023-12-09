@@ -1,5 +1,3 @@
-
-import './App.css';
 import Dashboard from './component/Dashboard/Dashboard';
 import Tile from './component/Tiles/Tiles';
 
