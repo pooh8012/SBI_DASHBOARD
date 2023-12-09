@@ -16,7 +16,8 @@ const Dashboard = () => {
 
   const fetchData = async (quarter) => {
     try {
-      const response = await fetch(`http://localhost:5000/api/metrics/${quarter}`);
+      //const response = await fetch(`http://localhost:5000/api/metrics/${quarter}`);
+      const response = await fetch(`https://sbi-dashboard-api.onrender.com/api/metrics/${quarter}`);
       if (!response.ok) {
         throw new Error(`HTTP error! Status: ${response.status}`);
       }
